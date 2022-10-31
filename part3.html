@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>A reflection on what I have learnt</title>
+    <link href="./style_part3.css" rel="stylesheet">
+</head>
+
+<body>
+    <span class="buttons">
+        <a class="button" href="./index.html">Home</a>
+        <a class="button" href="./part1.html">Part 1</a>
+        <a class="button" href="./part2.html">Part 2</a>
+        <!-- <a class="button" href="./part3.html">Part 3</a> -->
+    </span>
+
+    <h1 class="title">A reflection on what I have learnt</h1>
+    <section></section>
+    <div class="container">
+        <div data-id="page-outer-wrapper" id="outerWrapper">
+            <style type="text/css">
+                div, #outerWrapper {
+                    background-color: transparent;
+                    /* background-image: url("./figs/computer_science.jpg"); */
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: cover;
+                    background-attachment: fixed;
+                    opacity: 0.7;
+                }
+            </style>
+        </div>
+        <h1>A reflection on what I have learnt</h1>
+        <p style="font-size: 20px">
+            In this module, we mainly learned the following four sets of skills.
+        </p>
+        <p style="font-size: 20px">
+            First, as aforementioned in the first part, we learned <b>computational thinking</b>, which is an effective
+            and logical way of
+            thinking for solving problems. Using the methods we have learned, including <em>decomposition</em>, <em>pattern
+            recognition</em>, <em>abstraction</em>, <em>algorithm</em>, and <em>generalisation</em>, we can effectively decompose and solve
+            complex problems in a manageable way, such as the task of making tea for a group of people.
+        </p>
+        <p style="font-size: 20px">
+            Second, we learned how data is represented in a computer machine, using binary and other number systems.
+            First of all, because of the underlying hardware of a computer is implemented using integrated circuits,
+            and the voltage level in the circuits can represent two different states: high voltage and low voltage,
+            which correspond to the two numbers 0 and 1. Therefore, binary representation is a very natural choice
+            for computers. By converting decimal numbers into binary (octal, hexadecimal) numbers, we can store the
+            data in the computer. Vice versa, by converting the binary numbers into a decimal system, we can read
+            and understand the data stored in computers.
+        </p>
+        <p style="font-size: 20px">
+            Third, we learned some basic programming languages and algorithms. We operate on the data in computers by
+            writing programs to realize the algorithm logics
+            and solutions to the problems mentioned earlier. Specifically, we learned about the sequential execution
+            of programs, loops and conditional statements, which constitute the basic elements of all algorithms.
+        </p>
+        <p style="font-size: 20px">  
+            Finally, we learned how to display the data in the computer in a way that humans can understand. We have
+            learned HTML and CSS languages, where HTML can be used to design web pages, which can display text, pictures,
+            videos and other content, and CSS can be used to design and customize styles of web pages.
+        </p>
+        <p style="font-size: 20px">
+            In retrospect, I learned the methodology of solving problems from both the theoretical and the practical
+            sides, including how to think
+            in a computational way, how to use computers to represent data, how to use programming languages to
+            manipulate data, and how to display the data in the computer.
+        </p>
+        <p style="font-size: 20px">
+            Future courses will be a more in-depth study of these four aspects. For example, in the future, we could
+            design more
+            complicated programmes, do more advanced research study, and solve real problems using computer science
+            techniques,
+            all of which require the above basic knowledge we learned in this module. This module helps us lay a good
+            foundation
+            (e.g., the previously mentioned sequential execution, loops and conditional statements, etc.), which is
+            indispensable
+            for our future learning.
+        </p>
+        <h3 id="reference_part3">References</h3>
+        <p>
+            1. Morgan, M. J. W., & Chorley, M. J. (2021). Computational Thinking. Cardiff University Graduate Course
+            CMT119.
+        </p>
+        <p>
+            2. https://github.com/qq449245884/xiaozhi
+        </p>
+    </div>
+
+    <script>
+        let section = document.querySelector('section')
+        window.addEventListener('scroll', function () {
+            let value = window.scrollY
+            section.style.clipPath = `circle(${value}px at center)`
+        })
+    </script>
+</body>
+
+</html>

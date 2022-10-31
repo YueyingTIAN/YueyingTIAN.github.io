@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>
+        An introductory guide to Computational Thinking
+    </title>
+    <link href="./style_part1.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="./index.html" class="logo">Home</a>
+        <ul>
+            <!-- <li><a href="./part1.html">Part 1</a></li> -->
+            <li><a href="./part2.html">Part 2</a></li>
+            <li><a href="./part3.html">Part 3</a></li>
+        </ul>
+    </header>
+    <section class="banner"></section>
+    <div data-id="page-outer-wrapper" id="outerWrapper">
+        <div id="innerWrapper">
+            <style type="text/css">
+                body,
+                #outerWrapper {
+                    background-color: transparent;
+                    background-image: url("./figs/galaxy.jpg");
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: cover;
+                    background-attachment: fixed;
+                }
+            </style>
+            <!-- <style type="text/css">
+                .submit,
+                .submit:focus,
+                .submit:hover {
+                    background-color: white;
+                    color: white;
+                }
+            </style> -->
+        </div>
+    </div>
+    <h1 style="color:white">
+        An introductory guide to Computational Thinking
+    </h1>
+    <p style="font-size:20px; color:white">
+        To my understanding, computational thinking is a logical way of understanding and solving problems based on
+        computer science related basic concepts and related components. Computational thinking includes
+        <b>decomposition</b>, <b>pattern recognition</b>, <b>abstraction</b>, <b>algorithm</b>, and
+        <b>generalisation</b>. Decomposition and pattern
+        recognition
+        divide complex problems or tasks into simple manageable sub-problems or sub-tasks. Abstraction is to remove
+        information that has nothing to do with the solution of the problem and retain relevant information. Algorithms
+        are
+        specific
+        logic and steps to solve problems. Generalisation is the application of algorithms to new problems.
+    </p>
+    <p style="font-size:20px; color:white">
+        Consider the following example, i.e.,
+        we want to provide tea to a group of guests. First, we break down the task of making a cup of tea into a
+        series
+        of steps: boiling water, putting tea bags, making tea, filtering tea, and pouring tea. In this process, we
+        identified some patterns: such as the water temperature range, and the time to make tea. We have removed
+        some
+        irrelevant information through abstraction, for example, using what kind of teacup and kettle. We perform
+        specific
+        steps, which is equivalent to implementing specific algorithms. Finally, we can use the same method to make
+        many
+        cups of tea to serve multiple people, which corresponds to generalisation.
+    </p>
+    <p style="font-size:20px; color:white">
+        In general, computational thinking is about how to think in a computational way to simplify and solve
+        problems, and our future courses will realise this
+        way of thinking by designing algorithms and writing programmes. For example, in the future, we will learn
+        some commonly
+        used algorithms and data structures to study how to solve specific problems efficiently. Designing
+        algorithms to solve
+        problems requires us to have a logical way of thinking, which is the computational thinking in this module.
+        Therefore,
+        computational thinking is important for learning more advanced courses in my study of computer science
+        programme.
+    </p>
+    <h3 style="color:white" id="reference_part1">
+        References
+    </h3>
+    <p style="color:white">
+        1. Wing, J. M. (2006). Computational thinking. Communications of the ACM, 49(3), 33-35.
+    </p>
+    <p style="color:white">
+        2. https://github.com/qq449245884/xiaozhi
+    </p>
+    <script>
+        window.addEventListener('scroll', () => {
+            let header = document.querySelector('header')
+            header.classList.toggle('sticky', window.scrollY > 0)
+        })
+    </script>
+</body>
+
+
+</html>
