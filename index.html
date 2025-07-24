@@ -1,120 +1,270 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8" />
     <title>Yueying Tian</title>
-    <link href="./style_index.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        
+        /* 页眉样式 */
+        header {
+            background-color: #e0dccd;
+            color: rgb(120, 120, 120);
+            text-align: center;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .header-subtitle {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+        
+        /* 主要内容区域 */
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            min-height: calc(100vh - 200px);
+        }
+        
+        .content {
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        /* 个人信息区域 */
+        .profile-section {
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid #eee;
+        }
+        
+        .profile-img {
+            border-radius: 50%;
+            margin-bottom: 1rem;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .contact-info {
+            margin: 1rem 0;
+        }
+        
+        .contact-info p {
+            margin: 0.5rem 0;
+            font-size: 1rem;
+        }
+        
+        /* 章节标题 - 修改为左对齐并去掉下划线 */
+        h1 {
+            color: #303030;
+            margin: 2rem 0 1rem 0;
+            font-size: 1.5rem;
+            text-align: left;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* 段落样式 */
+        p {
+            margin-bottom: 1rem;
+            text-align: left;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Bio 部分特殊样式 */
+        .bio-text {
+            text-align: justify;
+            line-height: 1.8;
+            font-size: 1rem;
+        }
+        
+        /* 列表样式 */
+        ul {
+            text-align: left;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        li {
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        
+        li b {
+            color: #0b0b0a;
+        }
+        
+        /* 链接样式 */
+        a {
+            color: #1658d3;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        /* 页脚样式 */
+        footer {
+            background-color: #e1e1d1;
+            color: rgb(5, 4, 4);
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .footer-links {
+            margin-bottom: 1rem;
+        }
+        
+        .footer-links a {
+            color: #0b0b0b;
+            margin: 0 15px;
+            font-size: 0.9rem;
+        }
+        
+        .footer-links a:hover {
+            color: #070707;
+        }
+        
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .container {
+                margin: 1rem;
+                padding: 0 10px;
+            }
+            
+            .content {
+                padding: 1rem;
+            }
+            
+            header h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
 </head>
-
 <body>
-  
-    <h1>
-               Yueying TIAN
-    </h1>
+    <!-- 页眉 -->
+    <header>
+        <h1>Yueying TIAN</h1>
+        <div class="header-subtitle">"I’ve only done a little, but every step matters. Thank you for being here."</div>
+        <div class="header-subtitle">"很惭愧，就做了一点微小的工作，谢谢大家."</div>
+    </header>
 
-     <tr>
-        <td width="220">
-            <img src="IMG_2569.JPG" border="0", width="130">
-        </td>
-    <p>
-               yt322@sussex.ac.uk (work)
-        </p>
-    <p>
-               tianyueying163@gmail.com (personal)
-    </p>
-        
-    <h1>
-        Bio
-    </h1>
-    <p>
-        
-I am a Ph.D. student in Industrial Informatics and Signal Processing Research Group at the School of Engineering and Informatics in University of Sussex, 
-        advised by Prof. Chatwin and Dr. Birch. Previously, I received my MSc Computing(Distinction)
-        at Cardiff University.
-    </p>
-        
-       
-    <h1>
-        Education
-    </h1>
-    
-    <p>
-        Jan. 2023- : Ph.D., School of Engineering and Informatics, University of Sussex. 
-      </p>
-    <p> Supervisors: Prof C R Chatwin, Dr Phil Birch.
-        </p>
-    <p>
-        Sep. 2021- Jan. 2023 : M.S., Department of Computer Science and Informatics, Cardiff University.
-       
-        </p>
-    <p>Supervisor: Dr Nervo Verdezoto Dias
-    
-    <p>
-        Sep. 2016- Sep.2020: B.A., Department of Art and Design, Xuzhou University of Technology.
-    </p>    
-             
-    <h1>
-        Research
-    </h1>
-    <br/>
-    <ul>   
-        <li>
-        Evaluating a Motion-Based Region Proposal Approach with Background Subtraction Methods for Small Drone Detection.<br>
-        Elif Ucurum, Phil Birch, Xudong Han, <b>Yueying Tian</b>, Rupert Young, Chris Chatwin.<br>
-        <em>Drones and Autonomous Vehicles</em>, 2025.<br>
-        <p style="margin-top:3px">
-        [<a href="https://www.sciepublish.com/article/pii/491">Paper</a>]
-        </p>
-    </li>
-        
-    <li>
-        Enhancing Fetal Plane Classification Accuracy with Data Augmentation Using Diffusion Models.<br>
-        <b>Yueying Tian</b>, Elif Ucurum, Xudong Han, Rupert Young, Chris Chatwin, Philip Birch.<br>
-        <em>IET Image Processing</em>, 2025.<br>
-        <p style="margin-top:3px">
-        [<a href="https://ietresearch.onlinelibrary.wiley.com/doi/full/10.1049/ipr2.70151">paper</a>]
-        </p>
-    </li>
-    
-    <li>
-        ETTrack: enhanced temporal motion predictor for multi-object tracking.<br>
-        Xudong Han, Nobuyuki Oishi, <b>Yueying Tian</b>, Elif Ucurum, Rupert Young, Chris Chatwin, Philip Birch.<br>
-        <em>Applied Intelligence</em>, 2024.<br>
-        <p style="margin-top:3px">
-        [<a href="https://link.springer.com/article/10.1007/s10489-024-05866-4">Paper</a>][<a href="https://arxiv.org/abs/2405.15755">arXiv</a>]
-        </p>
-    </li>
+    <!-- 主要内容 -->
+    <div class="container">
+        <div class="content">
+            <!-- 个人信息区域 -->
+            <div class="profile-section">
+                <img src="IMG_2569.PNG" alt="Yueying Tian" class="profile-img" width="130">
+                <div class="contact-info">
+                    <p><strong>Work Email:</strong> yt322@sussex.ac.uk</p>
+                    <p><strong>Personal Email:</strong> tianyueying163@gmail.com</p>
+                </div>
+            </div>
+            
+            <h1>Bio</h1>
+            <p class="bio-text">
+                 I am a Ph.D. student in Industrial Informatics and Signal Processing Research Group at the School of Engineering and Informatics in University of Sussex, advised by Prof. Chatwin and Dr. Birch. Previously, I received my MSc Computing (Distinction) at Cardiff University. I was born in 1997 in Nanjing, China.
+            </p>
+            
+            <h1>Education</h1>
+            <p><strong>Jan. 2023 - Present:</strong> Ph.D., School of Engineering and Informatics, University of Sussex.</p>
+            <p><strong>Supervisors:</strong> Prof C R Chatwin, Dr Phil Birch.</p>
+            
+            <p><strong>Sep. 2021 - Jan. 2023:</strong> M.S., Department of Computer Science and Informatics, Cardiff University.</p>
+            <p><strong>Supervisor:</strong> Dr Nervo Verdezoto Dias</p>
+            
+            <p><strong>Sep. 2016 - Sep. 2020:</strong> B.A., Department of Art and Design, Xuzhou University of Technology.</p>
+            
+            <h1>Research</h1>
+            <ul>   
+                <li>
+                    Evaluating a Motion-Based Region Proposal Approach with Background Subtraction Methods for Small Drone Detection.<br>
+                    Elif Ucurum, Phil Birch, Xudong Han, <b>Yueying Tian</b>, Rupert Young, Chris Chatwin.<br>
+                    <em>Drones and Autonomous Vehicles</em>, 2025.<br>
+                    <p style="margin-top:3px">
+                    [<a href="https://www.sciepublish.com/article/pii/491">Paper</a>]
+                    </p>
+                </li>
+                
+                <li>
+                    Enhancing Fetal Plane Classification Accuracy with Data Augmentation Using Diffusion Models.<br>
+                    <b>Yueying Tian</b>, Elif Ucurum, Xudong Han, Rupert Young, Chris Chatwin, Philip Birch.<br>
+                    <em>IET Image Processing</em>, 2025.<br>
+                    <p style="margin-top:3px">
+                    [<a href="https://ietresearch.onlinelibrary.wiley.com/doi/full/10.1049/ipr2.70151">Paper</a>]
+                    </p>
+                </li>
+                
+                <li>
+                    ETTrack: enhanced temporal motion predictor for multi-object tracking.<br>
+                    Xudong Han, Nobuyuki Oishi, <b>Yueying Tian</b>, Elif Ucurum, Rupert Young, Chris Chatwin, Philip Birch.<br>
+                    <em>Applied Intelligence</em>, 2024.<br>
+                    <p style="margin-top:3px">
+                    [<a href="https://link.springer.com/article/10.1007/s10489-024-05866-4">Paper</a>][<a href="https://arxiv.org/abs/2405.15755">arXiv</a>]
+                    </p>
+                </li>
+                
+                <li>
+                    Improving pulmonary CT image generation with transformer-based generative adversarial networks.<br>
+                    <b>Yueying Tian</b>, Xudong Han, Elif Ucurum, Chris Chatwin, Philip Birch, Rupert Young.<br>
+                    <em>Pattern Recognition and Prediction XXXV; Proceedings of SPIE - The International Society for Optical Engineering</em>, 2024.<br>
+                    <p style="margin-top:3px">
+                    [<a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13040/1304002/Improving-pulmonary-CT-image-generation-with-transformer-based-generative-adversarial/10.1117/12.3017971.full">Paper</a>]
+                    </p>
+                </li>
+            </ul>
+         
+            <h1>Teaching</h1>    
+            <p><strong>University of Sussex</strong></p>
+            <p>Doctoral Tutor, 521H3: Image Processing (2024)</p>
+            <p>Doctoral Tutor, H7129: Applied Technology (2022/2023)</p>
+            <p>Doctoral Tutor, H7125: Applied Technology for Product Design (2022/2023)</p>
+        </div>
+    </div>
 
-    <li>
-        Improving pulmonary CT image generation with transformer-based generative adversarial networks.<br>
-        <b>Yueying Tian</b>, Xudong Han, Elif Ucurum, Chris Chatwin, Philip Birch, Rupert Young.<br>
-        <em>Pattern Recognition and Prediction XXXV; Proceedings of SPIE - The International Society for Optical Engineering</em>, 2024.<br>
-        <p style="margin-top:3px">
-        [<a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13040/1304002/Improving-pulmonary-CT-image-generation-with-transformer-based-generative-adversarial/10.1117/12.3017971.full">Paper</a>]
-        </p>
-    </li>
-
-    </ul>
- 
-    <h1>
-        Teaching
-    </h1>    
-    <p> 
-        University of Sussex</p>
-
-    <p>
-        Doctoral Tutor, 521H3: Image Processing (2024)
-    </p> 
-    <p>
-        Doctoral Tutor, H7129: Applied Technology (2022/2023)
-        </p>
-    <p>
-        Doctoral Tutor, H7125: Applied Technology for Product Design (2022/2023)
-    </p>    
-        
-        
-                   
+    <!-- 页脚 -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="mailto:yt322@sussex.ac.uk">Email</a>
+                <a href="#research">Research</a>
+                <a href="#education">Education</a>
+                <a href="#teaching">Teaching</a>
+            </div>
+            <p>&copy; 2025 Yueying Tian. </p>
+        </div>
+    </footer>
 </body>
-
 </html>
