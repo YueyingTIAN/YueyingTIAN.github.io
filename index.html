@@ -156,23 +156,32 @@
             color: #070707;
         }
 
-        /* CSS to control image sizes */
+        /* LinkedIn 图标样式 */
         .linkedin-icon {
-            width: 30px; /* Adjust this value as needed for LinkedIn icon */
-            height: auto; /* Maintain aspect ratio */
-            vertical-align: middle; /* Align with text if any */
+            width: 24px;
+            height: 24px;
+            fill: #0077b5;
+            transition: fill 0.3s ease;
         }
-
+        
+        .linkedin-icon:hover {
+            fill: #005885;
+        }
+        
+        /* Fun 图标样式 */
         .fun-icon {
-            width: 30px; /* Adjust this value as needed for the fun icon */
-            height: auto; /* Maintain aspect ratio */
-            vertical-align: middle; /* Align with text if any */
+            width: 24px;
+            height: 24px;
+            border-radius: 4px;
+            object-fit: cover;
+            transition: all 0.3s ease;
         }
-
-        /* You might want to add some spacing between your icons */
-        .footer-links a {
-            margin: 0 10px; /* Adds 10px spacing to the left and right of each link */
+        
+        .fun-icon:hover {
+            transform: scale(1.1);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
         }
+        
         
         /* 响应式设计 */
         @media (max-width: 768px) {
